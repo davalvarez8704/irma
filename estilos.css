@@ -4,13 +4,15 @@
 }
 
 header {
+    position: fixed;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     width: 100%;
-    height: 110px;
     background-color: #025373;
+
 }
 
 .logo {
@@ -38,7 +40,7 @@ header {
     border-radius: 5px 0px 0px 5px;
     text-align: justify;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: lighter;
     color: #fff;
     padding-left: 10px;
@@ -73,9 +75,10 @@ header {
     background-color: aliceblue;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    padding: 2px 20px;
+    align-items: end;
+    padding: 115px 20px 10px 20px;
+    width: 100%;
     color: #025373;
     font-size: 1.2rem;
 }
@@ -103,27 +106,27 @@ header {
 .nav-bar select {
     background-color: blue;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 0.5em;
     border-color: #fff;
 }
 
 .titulo {
 
     font-family: 'Times New Roman', Times, serif;
-    font-size: 45px;
+    font-size: 2.5em;
     text-align: center;
-    margin: 40px;
+    margin: 40px 0px;
 
 }
 
 .parrafo-principal {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: 1.5em;
     color: black;
     text-align: justify;
-    margin: 40px;
+    margin: 20px;
     padding: 20px;
-    border-radius: 0px 50px 0px 50px;
+    border-radius: 0px 50px;
     background-color: #ffffff;
 }
 
@@ -165,15 +168,13 @@ header {
 
 .contacto {
     display: flex;
-    flex-direction: row;
-    justify-content:space-between;
+    justify-content:flex-start;
 }
 
 .contacto-datos {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 10px 40px 10px 40px;
+    margin: 10px 90px;
 }
 
 .linea-horizontal {
@@ -206,4 +207,86 @@ header {
 .redes-sociales {
     margin: 10px 10px;
     padding: 0px 0px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo {
+        align-self: flex-start;
+    }
+
+    .buscador {
+        width: 95%;
+    }
+
+    .texto-header {
+        display: none;
+    }
+    
+    .nuestras-redes {
+        width: 95%;
+        justify-content: space-around;
+
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        font-size: 1em;
+        margin-top: 0px;
+        margin-left: 0px;
+        height: 100%;
+        padding: 275px 0px 20px 0px;
+        row-gap: 10px;
+        background: none;
+    }
+
+    .texto-nav {
+        background-color: aliceblue;
+        width:100vw;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+    .nav-bar select {
+        text-align: center;
+        align-self: center;
+        width: 80%;
+        height: auto;
+    }
+
+    .titulo {
+        margin: 30px 0px;
+    }
+    
+    .pie-de-pagina {
+        font-size: 0.8em;
+    }
+
+    .contacto-datos {
+        width: 100%;
+        margin-left: 10px;
+        justify-content: start;
+    }
+
+    .derechos-redes {
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+        justify-content: start;
+    }
+
+    .derechos {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .nuestras-redes {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
