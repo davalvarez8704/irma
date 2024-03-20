@@ -130,26 +130,6 @@ header {
     background-color: #ffffff;
 }
 
-.carruseles {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.carrusel {
-    width: calc(25% - 15px);
-    margin: 5px;
-
-}
-
-.carrusel  img {
-    border-radius: 40px;
-}
-
-.carrusel:hover {
-    width: 40%;
-}
-
 .mapa > iframe {
     display: flex;
     justify-content: center;
