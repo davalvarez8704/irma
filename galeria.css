@@ -1,3 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.principal {
+    background: none;
+}
+
+.apto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.subtitulo-galeria {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.parrafo-galeria {
+    margin-bottom: 40px;
+}
+
+.fotos-galeria {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+
+.foto-apartamento {
+    width: 49%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 750px) {
+    .foto-apartamento {
+        width: 98%;
+    }
+}
+
+
 /* {
     margin: 0px;
     padding: 0px;
@@ -13,13 +64,7 @@
     font-style:italic;
 }
 
-.apto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    background-color: burlywood;
-}
+
 
 .titulo {
     margin: 50px auto 20px auto;
@@ -45,19 +90,11 @@
 
 }
 
-.foto {
-    width: 20% ;
-    height: auto;
-    border-radius: 15px;
-}
+
 
 .foto:hover {
     box-shadow: 5px 5px 8px gray;
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
-    .foto {
-        width: 40%;
-    }
-}
+

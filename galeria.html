@@ -1,69 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="galeria.css">
+    <title>Apartamentos Irma</title>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <img src="imagenes/Apartamentos_Irma-removebg-preview.png" loading="lazy" alt="logo irma apartamentos" class="logo">
-            <div class="buscador">
-                <input type="search" placeholder="Describe lo que estás buscando ..." class="input-buscador">
-                <button type="submit" class="boton-buscador"></button>
+    <header>
+        <a href="irma.html"><img src="imagenes/Apartamentos_Irma-removebg-preview.png" loading="lazy" alt="logo irma apartamentos" class="logo"></a>
+        <div class="buscador">
+            <input type="search" placeholder="Describe lo que estás buscando ..." class="input-buscador">
+            <button type="submit" class="boton-buscador"></button>
+        </div>
+
+        <div class="nuestras-redes">
+            <p class="texto-header">Contáctanos</p>
+
+            <button onclick="abrirRedSocial(twitter)" class="boton-redes">
+                <img src="imagenes/logos--whatsapp-icon.svg" loading="lazy" alt="icono de whatsapp" class="contacto-irma">
+            </button>
+            <button onclick=" " class="boton-redes">
+                <img src="imagenes/skill-icons--instagram.svg" loading="lazy" alt="" class="contacto-irma">
+            </button>
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img src="imagenes/logos--facebook.svg" loading="lazy" alt="" class="contacto-irma">
+            </a>
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img src="imagenes/devicon--twitter.svg" loading="lazy" alt="" class="contacto-irma">
+            </a>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+
+        <div>
+            <ul class="texto-nav">
+                <li>
+                    <a href="galeria.html"> Nuestra galería </a>
+                </li>
+
+                <li>
+                    <a href="lugares.html"> Lugares de interés </a>
+                </li>
+            </ul>
+        </div>
+
+        <select name="lenguaje" id="lenguaje">
+            <option value="español">Español</option>
+            <option value="english">English</option>
+        </select>
+    </nav>
+    
+    <div class="principal">
+        
+        <div class="galeria">
+            <div class="apto">
+                <h1 class="titulo">Edificio Condominio Santa María del Mar</h1>
+
+                <h2 class="subtitulo-galeria">Apartamento 401</h2>
+
+                <p class="parrafo-galeria">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat sunt illo libero blanditiis beatae, pariatur ex exercitationem odit. Aut consequatur nesciunt reiciendis, molestiae commodi ea esse officiis harum adipisci?
+                </p>
+
+                <div class="fotos-galeria">
+                    <img src="imagenes/401/comedor.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/401/sala.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/401/cocina.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/401/habitacion-ppal.jpeg" alt="" class="foto-apartamento">
+                </div>
+                
+            </div>
+
+            <div class="apto">
+                <h1 class="titulo">Edificio Condominio Santa María del Mar</h1>
+
+                <h2 class="subtitulo-galeria">Apartamento 704</h2>
+
+                <p class="parrafo-galeria">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat sunt illo libero blanditiis beatae, pariatur ex exercitationem odit. Aut consequatur nesciunt reiciendis, molestiae commodi ea esse officiis harum adipisci?
+                </p>
+
+                <div class="fotos-galeria">
+                    <img src="imagenes/704/1.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/704/2.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/704/3.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/704/4.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/704/5.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/704/6.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/704/7.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/704/8.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/704/9.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/704/10.jpeg" alt="" class="foto-apartamento">
+                </div>
+                
+            </div>
+
+            <div class="apto">
+                <h1 class="titulo">Edificio Condominio Santa María del Mar</h1>
+
+                <h2 class="subtitulo-galeria">Apartamento 1102A</h2>
+
+                <p class="parrafo-galeria">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat sunt illo libero blanditiis beatae, pariatur ex exercitationem odit. Aut consequatur nesciunt reiciendis, molestiae commodi ea esse officiis harum adipisci?
+                </p>
+
+                <div class="fotos-galeria">
+                    <img src="imagenes/1102A/1.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1102A/2.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1102A/3.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/1102A/4.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/1102A/5.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1102A/6.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1102A/7.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/1102A/8.jpeg" alt="" class="foto-apartamento">
+                </div>
+                
+            </div>
+
+            <div class="apto">
+                <h1 class="titulo">Edificio Condominio Santa María del Mar</h1>
+
+                <h2 class="subtitulo-galeria">Apartamento 1102B</h2>
+
+                <p class="parrafo-galeria">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat sunt illo libero blanditiis beatae, pariatur ex exercitationem odit. Aut consequatur nesciunt reiciendis, molestiae commodi ea esse officiis harum adipisci?
+                </p>
+
+                <div class="fotos-galeria">
+                    <img src="imagenes/1102B/1.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1102B/2.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1102B/3.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1102B/4.png" alt="" class="foto-apartamento">
+                </div>
+                
+            </div>
+
+            <div class="apto">
+                <h1 class="titulo">Edificio Condominio Santa María del Mar</h1>
+
+                <h2 class="subtitulo-galeria">Apartamento 1402</h2>
+
+                <p class="parrafo-galeria">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat sunt illo libero blanditiis beatae, pariatur ex exercitationem odit. Aut consequatur nesciunt reiciendis, molestiae commodi ea esse officiis harum adipisci?
+                </p>
+
+                <div class="fotos-galeria">
+                    <img src="imagenes/1402/1.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/1402/2.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/1402/3.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/1402/4.jpeg" alt="" class="foto-apartamento">
+                </div>
+                
+            </div>
+
+            <div class="apto">
+                <h1 class="titulo">Edificio Condominio Santa María del Mar</h1>
+
+                <h2 class="subtitulo-galeria">Apartamento 1403</h2>
+
+                <p class="parrafo-galeria">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat sunt illo libero blanditiis beatae, pariatur ex exercitationem odit. Aut consequatur nesciunt reiciendis, molestiae commodi ea esse officiis harum adipisci?
+                </p>
+
+                <div class="fotos-galeria">
+                    <img src="imagenes/1403/1.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1403/2.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1403/3.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1403/4.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1403/5.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/1403/6.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1403/7.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/1403/8.jpeg" alt="" class="foto-apartamento">
+                </div>
+                
+            </div>
+
+            <div class="apto">
+                <h1 class="titulo">Edificio Condominio Santa María del Mar</h1>
+
+                <h2 class="subtitulo-galeria">Apartamento 1505A</h2>
+
+                <p class="parrafo-galeria">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat sunt illo libero blanditiis beatae, pariatur ex exercitationem odit. Aut consequatur nesciunt reiciendis, molestiae commodi ea esse officiis harum adipisci?
+                </p>
+
+                <div class="fotos-galeria">
+                    <img src="imagenes/1505a/1.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1505a/2.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1505a/3.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1505a/4.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1505a/5.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1505a/6.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1505a/7.png" alt="" class="foto-apartamento">
+                    <img src="imagenes/1505a/8.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/1505a/9.jpeg" alt="" class="foto-apartamento">
+                    <img src="imagenes/1505a/10.jpeg" alt="" class="foto-apartamento">
+                </div>
+                
+            </div>
+
+        </div>
+
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <div class="elfsight-app-d3e9cdbc-6f5a-4894-a15e-957de645773d" data-elfsight-app-lazy></div>
+
+    </div>
+    
+    <footer class="pie-de-pagina">
+        <div class="contacto">
+
+            <div class="contacto-datos">
+                <p>Apartamentos Irma</p>
+                <p>Direccion: Cra 2 # 8-36</p>
+                <p>Telefono: +57 312 6497426</p>
+                <p>E-mail: airma5814@gmail.com</p>
+            </div>
+
+        </div>
+
+        <div class="linea-horizontal"> </div>
+
+        <div class="derechos-redes">
+            <div class="derechos">
+                Copyrigth by Softworks 2024
+            </div>
+
+            <div class="contacto-datos">
+                <p>Direccion: Cra 66 # 48a-128 Santa Marta, Colombia</p>
+                <p>Telefono: +57 301 377 39 06</p>
+                <p>E-mail: softworks@gmail.com</p>
             </div>
 
             <div class="nuestras-redes">
-                <p class="texto-header">Contáctanos</p>
-
-                <a href="https://web.whatsapp.com/" target="_blank">
-                    <img src="imagenes/logos--whatsapp-icon.svg" loading="lazy" alt="icono de whatsapp" class="contacto-irma">
-                </a>
-                <a href="https://web.whatsapp.com/" target="_blank">
-                    <img src="imagenes/skill-icons--instagram.svg" loading="lazy" alt="" class="contacto-irma">
-                </a>
-                <a href="https://web.whatsapp.com/" target="_blank">
-                    <img src="imagenes/logos--facebook.svg" loading="lazy" alt="" class="contacto-irma">
-                </a>
-                <a href="https://web.whatsapp.com/" target="_blank">
-                    <img src="imagenes/devicon--twitter.svg" loading="lazy" alt="" class="contacto-irma">
-                </a>
-            </div>
-
-        </header>
-
-        <nav class="nav-bar">
-
-            <div class="texto-nav">
-                <a href="galeria.html"> Nuestra galería </a>
-                <a href="lugares.html"> Lugares de interés </a>
-            </div>
-
-            <select name="lenguaje" id="lenguaje">
-                <option value="español">Español</option>
-                <option value="english">English</option>
-            </select>
-        </nav>
-
-        <div class="apto">
-            <h1 class="titulo">Edificio Condominio Nuevo Rodadero</h1>
-            <h2 class="subtitulo">Apartamento 1102A</h2>
-            <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis error eligendi amet nulla, perspiciatis illum ea rem culpa veniam inventore explicabo voluptatem officia in accusantium sit quis officiis, tenetur modi.</p>
-            <div class="fotos">
-                <img src="imagenes/1102A/sala-vista.png" alt="" class="foto">
-                <img src="imagenes/1102A/sala.png" alt="" class="foto">
-                <img src="imagenes/1102A/habitacion.png" alt="" class="foto">
-                <img src="imagenes/1102A/habitacion3.png" alt="" class="foto">
-                <img src="imagenes/1102A/cocina-comedor.png" alt="" class="foto">
-                <img src="imagenes/1102A/piscina.png" alt="" class="foto">
-                <img src="imagenes/1102A/baño.png" alt="" class="foto">
+                <p class="redes-sociales">Nuestras redes sociales</p>
+                <img src="imagenes/skill-icons--instagram.svg" loading="lazy" alt="" class="redes-sociales">
+                <img src="imagenes/logos--facebook.svg" loading="lazy" alt="" class="redes-sociales">
+                <img src="imagenes/devicon--twitter.svg" loading="lazy" alt="" class="redes-sociales">
+                <img src="imagenes/fa--youtube.svg" loading="lazy" alt="" class="redes-sociales">
             </div>
         </div>
-        
-    </div>
+
+    </footer>
+    
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"> </script>
     
 </body>
 </html>

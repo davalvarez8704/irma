@@ -1,18 +1,21 @@
-.principal {
-    background-image: url(imagenes/fondo.webp);
-    background-repeat: no-repeat;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header {
-    position: fixed;
-    z-index: 1000;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
+    padding: 10px 25px;
     background-color: #025373;
-
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
 }
 
 .logo {
@@ -37,7 +40,6 @@ header {
     width: 90%;
     height: 100%;
     border: none;
-    border-radius: 5px 0px 0px 5px;
     text-align: justify;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1em;
@@ -58,17 +60,26 @@ header {
     cursor: pointer;
 }
 
+.nuestras-redes {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .texto-header {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: 20px;
     color: #ffffff;
-    margin-right: 10px;
+}
+
+.boton-redes {
+    background: none;
+    border-style: none;
 }
 
 .contacto-irma {
-    width: 35px;
+    width: 30px;
     height: auto;
-    margin: 10px;
 }
 
 .nav-bar {
@@ -77,20 +88,16 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: end;
-    padding: 115px 20px 10px 20px;
+    padding: 10px 20px;
     width: 100%;
     color: #025373;
     font-size: 1.2rem;
+    margin-top: 115px;
 }
 
 .texto-nav {
     display: flex;
     flex-direction: row;
-}
-
-.nav-bar button {
-    background: none;
-    border: none;
 }
 
 .nav-bar a {
@@ -108,6 +115,26 @@ header {
     color: #fff;
     border-radius: 0.5em;
     border-color: #fff;
+}
+
+.carousel {
+    width: 100%;
+    align-self: center;
+}
+
+.barra-separadora {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    background-image: url(imagenes/fondo.webp);
+    background-repeat: no-repeat;
+    width:100%;
+
 }
 
 .titulo {
@@ -130,20 +157,42 @@ header {
     background-color: #ffffff;
 }
 
-.mapa > iframe {
+.mapa {
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 100vh;
+}
+
+.mapa > iframe {
+    display: flex;
+    width: 80%;
     border-radius: 15px;
     opacity: 0.8;
     margin: 40px 0px 40px 0px;
+}
+
+.whatsapp-logo {
+    align-self: flex-end;
+    margin: 0px 40px 30px 0px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 20;
+}
+
+.whatsapp-logo img {
+    width: 60px;
+    opacity: 0.6;
+}
+
+.whatsapp-logo img:hover {
+    width: 65px;
+    opacity: 100;
 }
 
 .pie-de-pagina {
     background-color: lightgray;
     display: flex;
     flex-direction:column;
+    margin-top: 30px;
 }
 
 .contacto {
@@ -181,7 +230,6 @@ header {
 .nuestras-redes {
     display: flex;
     align-items: center;
-    margin: 10px 40px 10px 40px;
 }
 
 .redes-sociales {
@@ -189,7 +237,8 @@ header {
     padding: 0px 0px;
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 750px) {
     header {
         flex-direction: column;
         gap: 20px;
@@ -216,20 +265,18 @@ header {
     .nav-bar {
         flex-direction: column;
         font-size: 1em;
-        margin-top: 0px;
-        margin-left: 0px;
-        height: 100%;
-        padding: 275px 0px 20px 0px;
+        margin-top: 230px;
         row-gap: 10px;
         background: none;
+        align-items: center;
     }
 
     .texto-nav {
+        margin-top: 0px;
         background-color: aliceblue;
         width:100vw;
         justify-content: center;
-        align-items: center;
-        padding-bottom: 15px;
+        padding: 10px 0px;
     }
 
     .nav-bar select {
@@ -241,6 +288,11 @@ header {
 
     .titulo {
         margin: 30px 0px;
+    }
+
+    .mapa iframe {
+        width: 80%;
+        height: 200px;
     }
     
     .pie-de-pagina {
@@ -265,8 +317,5 @@ header {
         margin-left: 0px;
     }
 
-    .nuestras-redes {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
+
 }
